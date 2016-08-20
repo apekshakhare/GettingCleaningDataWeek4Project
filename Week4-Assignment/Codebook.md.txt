@@ -1,0 +1,38 @@
+================================================================run_analysis.R
+================================================================
+
+This script does the following 
+
+PART-1 Merges the training and the test sets to create one data set.
+
+
+Here train_x, train_y are the training dataset objects
+test_x,test_y are test dataset objects. They both are dataset and label set respectively.
+
+subjects_train and subjects_test are subjects datasets
+
+merged_x,merged_y,merged_s are merged training and test datasets
+
+
+
+PART-2 Extracts only the measurements on the mean and standard deviation for each measurement.
+
+Object named features is the features dataset and to extract mean and standard deviation measurements we used a variable xtract and accodringly modified the main dataset into modified_x
+
+
+PART-3 Uses descriptive activity names to name the activities 
+ in the data set
+
+activity_label object has the data from activity_labels.txt 
+Used these to modify the activity labels in teh actual descriptive name
+
+
+PART-4 Appropriately labels the data set with descriptive 
+variable names.
+
+We have features in features object and modified the labels in dataset based on the feature values
+
+
+PART-5 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+Combine the dataset to have activity label and subject details as activity_bale and id respectively. Finally create a new dataset which has means of each measurement for each activity and each subject.
