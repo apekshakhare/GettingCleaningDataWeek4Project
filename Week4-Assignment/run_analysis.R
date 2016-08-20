@@ -48,7 +48,7 @@ names(merged_x)<-features$V2
 
 names(merged_y)<-c("activity_label")
 names(merged_s)<-c("id")
-final<-cbind(merged_x,merged_s,merged_y)
+final<-cbind(merged_s,merged_y,merged_x)
 col<-grep("mean",tolower(names(finak)),value=TRUE)
 new_dataset<-table(final$id,final$activity_label,col)
 write(new_dataset, file = "C:/Users/gapekha/Documents/new_dataset.txt")
